@@ -14,3 +14,5 @@ As I've slowly started leveraging AI, I went to claude, built up a quick spec, a
 Some hours later: with a sub-agent set, a model choice, OpenRouter loaded up (< $1 daily spend) openai/text-embedding-3-small -- and multiple passes (with red team, verification, and new implementation) scree is getting ready for use.
 
 I'll update with more info when it's not 1am.
+
+edit: I forgot to link the [repo](https://github.com/jrapakko/scree/)
