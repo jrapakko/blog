@@ -7,7 +7,10 @@
 {% block content %}
 <article>
 <header>
-<h1>{{ page.title }}</h1>
+<pre class="whoami">
+$ cat {{ page.slug }}.md
+</pre>
+<h2>&gt; {{ page.title }}</h2>
 <p class="post-meta"><time datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d") }}</time></p>
 </header>
 {{ page.content | safe }}
