@@ -5,7 +5,7 @@ template = "index.html"
 
 <pre class="whoami">
 $ whoami
-janne
+j
 </pre>
 
 Notes and writing. [about me](@/about.md)

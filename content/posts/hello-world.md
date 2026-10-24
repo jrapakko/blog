@@ -5,4 +5,4 @@ date = 2026-10-24
 tags = ["meta"]
 +++
 
-First post. New posts go in `content/posts/` as Markdown files with a `title` and `date`.
+First post. Lots to put here
