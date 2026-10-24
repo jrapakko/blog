@@ -20,6 +20,6 @@ dark_theme = "github-dark"
 
 [extra]
 author = "J"
-# github = "https://www.github.com/jrapakko"
-# email = "j@jrpko.dev"
+github = "jrapakko"
+email = "j@jrpko.dev"
 # homepage_post_limit = 7
