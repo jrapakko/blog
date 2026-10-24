@@ -5,12 +5,17 @@
 {% set toc = page.toc %}{% include "toc.html" %}
 {% endblock %}
 {% block content %}
+<style>
+.post-title { color: #1a7f37; }
+:root[data-theme="dark"] .post-title { color: #3fb950; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) .post-title { color: #3fb950; } }
+</style>
 <article>
 <header>
 <pre class="whoami">
 $ cat {{ page.slug }}.md
 </pre>
-<h2>&gt; {{ page.title }}</h2>
+<h2 class="post-title">&gt; {{ page.title }}</h2>
 <p class="post-meta"><time datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d") }}</time></p>
 </header>
 {{ page.content | safe }}
