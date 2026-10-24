@@ -5,7 +5,7 @@ date = 2026-10-24
 tags = ["claude","scree","mcp","embeddings","vectordb"]
 +++
 
-[Scree](https://www.github.com/jrapakko/scree) is an MCP server that gives Claude Code semantic search over the ADRs and documented md files so that sub-agents don't have to read in long lines.
+[Scree](https://www.github.com/jrapakko/scree) is an MCP server that gives Claude Code semantic search over the ADRs and documented md files so that sub-agents don't have to read in large files.
 
 ## The problem
 
@@ -19,7 +19,7 @@ Scree indexes markdown files. It uses ~1600 character chunks. These get embedded
 
 ## Building it with Claude Code
 
-As I've slowly started leveraging AI, I went to claude, built up a quick spec, and then had claude code take a crack at it when I got home.
+As I've slowly started leveraging AI, I went to Claude, built up a quick spec, and then had Claude Code take a crack at it when I got home.
 
 Some hours later: with a sub-agent set, a model choice, OpenRouter loaded up (< $1 daily spend) openai/text-embedding-3-small -- and multiple passes (with red team, verification, and new implementation) scree is getting ready for use.
 
@@ -44,7 +44,7 @@ Low
 - L6: the watcher keeps running in a broken state if the database is deleted or the notes folder is moved away.
 ```
 
-It allowed prompt injections, symlinking to SSH keys and all sorts of not great things.
+It was open to prompt injection, symlinking to SSH keys and all sorts of not great things.
 
 But as it's moved forward, these have been fixed, and onto others:
 ```
@@ -53,7 +53,7 @@ H2, the wrapper scripts can run a command. They load the settings file by execut
 
 ## Numbers
 
-I've set max daily spend at $1. Under my use, I should be using about 2 magnitudes less than that (maybe 1c/day) and memory usage ranges from idle 13~15mb to load of 29mb.
+I've set max daily spend at $1. Under my use, I should be using about 2 orders of magnitude less than that (maybe 1c/day) and memory usage ranges from idle 13-15MB to load of 29MB.
 
 ## What's next
 
