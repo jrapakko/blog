@@ -1,0 +1,25 @@
+# Overridden at deploy time by the GitHub Pages URL (or your custom domain)
+base_url = "http://127.0.0.1:1111"
+title = "My Blog"
+description = "Notes and writing."
+default_language = "en"
+theme = "zola-quiet"
+compile_sass = false
+build_search_index = false
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+taxonomies = [
+  { name = "tags", paginate_by = 20, feed = true },
+]
+
+[markdown.highlighting]
+style = "class"
+light_theme = "github-light"
+dark_theme = "github-dark"
+
+[extra]
+author = "Janne"
+# github = ""
+# email = ""
+# homepage_post_limit = 7
